@@ -1,0 +1,13 @@
+/* Reset básico de margem e definição da fonte principal */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fonte para blocos de código e trechos monoespaçados */
+code {
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,315 @@
+/* ====================
+   🔠 FONTES PERSONALIZADAS
+   ==================== */
+   body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #1b1c1e, #23242a, #1b1b20, #212226);
+    background-size: 400% 400%;
+    animation: lavaLamp 15s ease infinite;
+    margin: 0;
+  }
+  
+  @keyframes lavaLamp {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* ====================
+     📋 CONTAINER PRINCIPAL
+     ==================== */
+  #root {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  /* ====================
+   🧾 LISTAGEM
+   ==================== */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 30px 20px;
+  list-style: none;
+  justify-items: center;
+}
+
+.li-list,
+.li-listUser {
+  background-color: #2c2f38;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #6f42c1;
+  box-shadow:
+    0 0 8px rgba(111, 66, 193, 0.3),
+    0 2px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Merriweather', serif;
+  transition: transform 0.2s, box-shadow 0.3s, border-color 0.3s;
+  max-width: 340px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.li-list:hover,
+.li-listUser:hover {
+  transform: scale(1.015);
+  box-shadow:
+    0 0 10px rgba(111, 66, 193, 0.5),
+    0 4px 20px rgba(0, 0, 0, 0.4);
+  border-color: #a179ff;
+}
+
+.card,
+.card-listUser {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card .right,
+.card-listUser .right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+  
+  /* ====================
+     💳 CARD INTERNO
+     ==================== */
+  .card,
+  .card-listUser {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card .right,
+  .card-listUser .right {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* ====================
+     🎯 BOTÕES
+     ==================== */
+  button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Botões específicos */
+  .btn-list-1 {
+    background-color: #6f42c1;
+  }
+  
+  .btn-list-2 {
+    background-color: #28a745;
+  }
+  
+  .btn-list-3 {
+    background-color: #dc3545;
+  }
+  
+  .btn-header {
+    background-color: #6f42c1;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition: filter 0.3s, transform 0.2s;
+    cursor: pointer;
+  }
+  
+  .btn-header:hover,
+  .btn-list-1:hover,
+  .btn-list-2:hover,
+  .btn-list-3:hover {
+    filter: brightness(1.2);
+  }
+  
+  /* ====================
+     🧭 HEADER / TITULOS
+     ==================== */
+  .title,
+  .title-listUser {
+    font-size: 2rem;
+    color: white;
+    margin: 30px 0;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .header,
+  .header-listUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    flex-wrap: wrap;
+  }
+  
+  /* ====================
+     📝 FORMULÁRIO
+     ==================== */
+  .crud-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .modal-content {
+    background-color: #1f222a;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .top input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #2b2e36;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  
+  /* Botões do formulário */
+  .modal-content button {
+    background-color: #6f42c1;
+  }
+  
+  /* ====================
+     📎 OUTROS
+     ==================== */
+  .bottom {
+    margin-top: 40px;
+    color: #aaa;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Estilo diferenciado para título do formulário */
+.form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a179ff;
+}
+/* ====================
+   📝 FORMULÁRIO CADASTRO - VISUAL DIFERENCIADO
+   ==================== */
+   .modal-content {
+    background: linear-gradient(135deg, #1e1e2e, #2b2d42);
+    border: 2px dashed #8b7eff;
+    padding: 35px 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 
+      0 0 10px rgba(130, 98, 255, 0.5),
+      0 4px 25px rgba(0, 0, 0, 0.4),
+      inset 0 0 8px rgba(130, 98, 255, 0.1);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .modal-content::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 100px;
+    height: 100px;
+    background: rgba(130, 98, 255, 0.1);
+    border-radius: 50%;
+    filter: blur(25px);
+    animation: floatBubble 6s ease-in-out infinite alternate;
+    z-index: 0;
+  }
+  
+  @keyframes floatBubble {
+    0% {
+      transform: translateY(0px) translateX(0px);
+    }
+    100% {
+      transform: translateY(20px) translateX(-20px);
+    }
+  }
+  
+  .modal-content h1 {
+    font-size: 1.7rem;
+    color: #bbaaff;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .modal-content .top input {
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #252636;
+    color: white;
+    border: 1px solid #444;
+    outline: none;
+    transition: border-color 0.3s ease;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .modal-content .top input:focus {
+    border-color: #8b7eff;
+  }
+  
+  .modal-content button {
+    background-color: #8b7eff;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .modal-content button:hover {
+    filter: brightness(1.1);
+    transform: scale(1.03);
+  }

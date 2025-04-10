@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS crud;
+USE crud;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  sobrenome VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL,
+  genero VARCHAR (100) NOT NULL,
+  anoNascimento INT,
+  cpf VARCHAR(11)
+);
